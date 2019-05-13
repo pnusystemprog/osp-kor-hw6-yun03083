@@ -1,23 +1,23 @@
+#include <string.h>
 #include "phone.h"
 
 void printAll(){
 	printf("<< Display all contents in the PhoneBook >>\n");
 	for(int i = 0; i < size; i++){
-		printf("%s\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
+		printf("%s\t\t\t\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
 	}
 }
 
 void searchByName(){
 	char name[10];
 	printf(">> Enter a name to search: ");
-	scanf("%s", &name);
+	scanf("%s", name);
 	for(int i = 0; i < size; i++){
-		if (name == PhoneBook[i].Name){
+		if (!strcmp(name, PhoneBook[i].Name)){
 			printf("%s\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
+			break;
 		}
-		else {
-			printf("Oops! %s is not int the PhoneBook.\n", name);
-		}
+	printf("Oops! %s is not int the PhoneBook.\n", name);
 	}
 } 	
 		
