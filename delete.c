@@ -10,8 +10,8 @@ void deleteByName(){
 				PhoneBook[j] = PhoneBook[j+1];
 			printf("%s is deleted...\n",name);
 			size--;
+			}
 		}
-	}
 		else {
 			printf("Oops! %s is not in the PhoneBook.\n", name);
 		}
