@@ -14,8 +14,8 @@ void registerPhoneData(){
 		char number[13];
 		printf("PhoneNumber: ");
 		scanf("%s", &number);
-		PhoneBook[bookSize].Name = name;
-		PhoneBook[bookSize].PhoneNumber = number;
+		strcpy(PhoneBook[bookSize].Name, name);
+		strcpy(PhoneBook[bookSize].PhoneNumber, number);
 		printf("Registered...\n");
 		bookSize++;
 		size = bookSize;

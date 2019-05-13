@@ -1,5 +1,5 @@
 main: register.o search.o delete.o phoneBookMain.o
-	gcc -o phoneBook register.l search.o delete.o phoneBookMain.o
+	gcc -o phoneBook register.o search.o delete.o phoneBookMain.o
 
 register.o: register.c phoneBookMain.c phone.h
 	gcc -c register.c phoneBookMain.c phone.h
