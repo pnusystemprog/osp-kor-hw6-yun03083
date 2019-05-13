@@ -1,4 +1,7 @@
+#include "phone.h"
+
 void registerPhoneData(){
+	size = 0;
 	char password[11];
 	static int bookSize = 0;
 	static int wrongPassword = 0; 

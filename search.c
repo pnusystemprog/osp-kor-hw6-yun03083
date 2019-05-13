@@ -1,3 +1,5 @@
+#include "phone.h"
+
 void printAll(){
 	printf("<< Display all contents in the PhoneBook >>\n");
 	for(int i = 0; i < size; i++){
