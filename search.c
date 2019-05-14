@@ -10,14 +10,17 @@ void printAll(){
 
 void searchByName(){
 	char name[10];
+	int oops = 0;
 	printf(">> Enter a name to search: ");
 	scanf("%s", name);
 	for(int i = 0; i < size; i++){
 		if (!strcmp(name, PhoneBook[i].Name)){
 			printf("%s\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
-			break;
+			oops = 1;		
 		}
-	printf("Oops! %s is not int the PhoneBook.\n", name);
 	}
+	if(oops == 0){
+		printf("Oops! %s is not in the PhoneBook.\n", name);
+	}	
 } 	
 		
