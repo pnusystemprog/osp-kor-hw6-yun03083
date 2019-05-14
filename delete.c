@@ -12,12 +12,12 @@ void deleteByName(){
 				PhoneBook[j] = PhoneBook[j+1];
 			}
 			size--;
-			printf("%s is deleted...\n", name);
+			printf("%s is deleted...\n\n", name);
 			oops = 1;
 		}
 	}
 	if(oops == 0){
-		printf("Oops! %s is not in the PhoneBook.\n", name);
+		printf("Oops! %s is not in the PhoneBook.\n\n", name);
 	}
 }
 

@@ -18,7 +18,7 @@ void registerPhoneData(){
 			scanf("%s", number);
 			strcpy(PhoneBook[bookSize].Name, name);
 			strcpy(PhoneBook[bookSize].PhoneNumber, number);
-			printf("Registered...\n");
+			printf("Registered...\n\n");
 			bookSize++;
 			size = bookSize;
 			break;
@@ -33,5 +33,8 @@ void registerPhoneData(){
 			}
 		}
 	}		
-	printf(">>You are not allowed to access PhoneBook.\n");
+	if(wrongPassword == 4){	
+		printf(">>You are not allowed to access PhoneBook.\n");
+		wrongPassword = 0;
+	}
 }	

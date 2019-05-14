@@ -6,6 +6,7 @@ void printAll(){
 	for(int i = 0; i < size; i++){
 		printf("%s\t\t\t\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
 	}
+	printf("\n");
 }
 
 void searchByName(){
@@ -15,12 +16,12 @@ void searchByName(){
 	scanf("%s", name);
 	for(int i = 0; i < size; i++){
 		if (!strcmp(name, PhoneBook[i].Name)){
-			printf("%s\t%s\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
+			printf("%s\t%s\n\n", PhoneBook[i].Name, PhoneBook[i].PhoneNumber);
 			oops = 1;		
 		}
 	}
 	if(oops == 0){
-		printf("Oops! %s is not in the PhoneBook.\n", name);
+		printf("Oops! %s is not in the PhoneBook.\n\n", name);
 	}	
 } 	
 		
